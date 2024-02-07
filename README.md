@@ -1,4 +1,4 @@
-***Singapore  Resale Flat Prices Predicting***
+***Singapore  Resale Flat Prices Predicting**
 
 #Introduction
 The project addresses the challenges in accurately estimating resale flat prices in the competitive Singapore market. The predictive model leverages machine learning algorithms to analyze various factors, providing users with reliable estimates for resale prices.
