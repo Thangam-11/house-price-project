@@ -16,7 +16,7 @@ The project addresses the challenges in accurately estimating resale flat prices
 **Data Preprocessing**
 
 Data Understanding: Before diving into modeling, it's crucial to gain a deep understanding of your dataset. Start by identifying the types of variables within it, distinguishing between continuous and categorical variables, and examining their distributions. In our dataset.
-- **Handling Null Values**:values, whether through mean, median imputation, depends on the nature of the data and the specific feature.
+
 
 **Encoding and Data Type Conversion:** To prepare categorical features for modeling, we employ ordinal encoding. This technique transforms categorical values into numerical representations based on their intrinsic nature and their relationship with the target variable. Additionally, it's essential to convert data types to ensure they match the requirements of our modeling process.
 
@@ -33,7 +33,7 @@ Outlier Visualization: We identify and rectify outliers by leveraging Seaborn's 
  **Algorithm Selection**: After thorough evaluation, Random Forest Regressor, demonstrate commendable testing accuracy. Upon checking for any overfitting issues in both training and testing, both models exhibit strong performance without overfitting concerns. I choose the Random Forest Regressor for its ability to strike a balance between interpretability and accuracy, ensuring robust performance on unseen data.
 
 - **Hyperparameter Tuning with GridSearchCV and Cross-Validation**: To fine-tune our model and mitigate overfitting, we employ GridSearchCV with cross-validation for hyperparameter tuning. This function allows us to systematically explore multiple parameter values and return the optimal set of parameters.
-`{'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2}`
+`{'max_depth': 20, 'max_features': ='log2', 'min_samples_leaf': 2, 'min_samples_split': 5}`
 
 **Contributing**
 
